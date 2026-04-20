@@ -1,5 +1,11 @@
 # Hetzner Cloud IP Module
 
+[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.0-blueviolet)](https://www.terraform.io/)
+[![License: MPL-2.0](https://img.shields.io/badge/License-MPL--2.0-blue.svg)](https://opensource.org/licenses/MPL-2.0)
+[![CI](https://github.com/terraform-hc-modules/terraform-hcloud-ip/actions/workflows/ci.yml/badge.svg)](https://github.com/terraform-hc-modules/terraform-hcloud-ip/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/terraform-hc-modules/terraform-hcloud-ip)](https://github.com/terraform-hc-modules/terraform-hcloud-ip/releases)
+
+
 Terraform module for IP management on Hetzner Cloud including Primary IP, Floating IP, and rDNS.
 
 ## Usage
