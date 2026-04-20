@@ -78,8 +78,10 @@ No resources.
 
 | Name | Description |
 | ---- | ----------- |
+| <a name="output_floating_ip"></a> [floating\_ip](#output\_floating\_ip) | Floating IP details. |
 | <a name="output_floating_ip_address"></a> [floating\_ip\_address](#output\_floating\_ip\_address) | Floating IP address. |
 | <a name="output_floating_ip_id"></a> [floating\_ip\_id](#output\_floating\_ip\_id) | ID of the floating IP. |
+| <a name="output_primary_ip"></a> [primary\_ip](#output\_primary\_ip) | Primary IP details. |
 | <a name="output_primary_ip_address"></a> [primary\_ip\_address](#output\_primary\_ip\_address) | Primary IP address. |
 | <a name="output_primary_ip_id"></a> [primary\_ip\_id](#output\_primary\_ip\_id) | ID of the primary IP. |
 <!-- END_TF_DOCS -->
