@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.1.0...v0.2.0) (2026-04-20)
+
+
+### Features
+
+* add pre-commit, semantic-release, and improve examples ([b7b578e](https://github.com/terraform-hc-modules/terraform-hcloud-ip/commit/b7b578e3442e503631c9ac903795bba127772558))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
