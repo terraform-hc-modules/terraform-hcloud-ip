@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.2.1...v0.3.0) (2026-04-20)
+
+
+### Features
+
+* improve IP module maturity ([8d23941](https://github.com/terraform-hc-modules/terraform-hcloud-ip/commit/8d23941deed9eefc5df59402b4c32852699c3b57))
+
 ## [0.2.1](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.2.0...v0.2.1) (2026-04-20)
 
 
