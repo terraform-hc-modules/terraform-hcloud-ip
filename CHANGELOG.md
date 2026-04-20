@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.2.0...v0.2.1) (2026-04-20)
+
+
+### Bug Fixes
+
+* examples now use root module with source = ../../ ([db301bb](https://github.com/terraform-hc-modules/terraform-hcloud-ip/commit/db301bb18eb4cb5e7256512495177cc839533aaf))
+
 # [0.2.0](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.1.0...v0.2.0) (2026-04-20)
 
 
