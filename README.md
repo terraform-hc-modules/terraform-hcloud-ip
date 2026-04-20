@@ -60,6 +60,7 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_name"></a> [name](#input\_name) | Name prefix for resources. | `string` | n/a | yes |
 | <a name="input_auto_delete"></a> [auto\_delete](#input\_auto\_delete) | Auto delete primary IP. | `bool` | `false` | no |
 | <a name="input_create_floating_ip"></a> [create\_floating\_ip](#input\_create\_floating\_ip) | Whether to create a floating IP. | `bool` | `false` | no |
 | <a name="input_create_primary_ip"></a> [create\_primary\_ip](#input\_create\_primary\_ip) | Whether to create a primary IP. | `bool` | `false` | no |
@@ -70,7 +71,6 @@ No resources.
 | <a name="input_floating_ip_type"></a> [floating\_ip\_type](#input\_floating\_ip\_type) | Type of floating IP. | `string` | `"ipv4"` | no |
 | <a name="input_home_location"></a> [home\_location](#input\_home\_location) | Home location for floating IP. | `string` | `"fsn1"` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply. | `map(string)` | `{}` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name prefix for resources. | `string` | n/a | yes |
 | <a name="input_primary_ip_name"></a> [primary\_ip\_name](#input\_primary\_ip\_name) | Name of the primary IP. | `string` | `null` | no |
 | <a name="input_primary_ip_type"></a> [primary\_ip\_type](#input\_primary\_ip\_type) | Type of primary IP. | `string` | `"ipv4"` | no |
 
