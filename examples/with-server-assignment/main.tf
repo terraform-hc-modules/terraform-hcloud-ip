@@ -29,17 +29,18 @@ module "compute" {
 # IP Module - Floating IP Assigned to Server
 ################################################################################
 
-module "floating_ip" {
-  source = "../../modules/floating-ip"
+module "ip" {
+  source = "../../"
 
-  name          = local.name
-  type          = "ipv4"
-  home_location = "fsn1"
-  labels        = local.tags
+  name   = local.name
+  labels = local.tags
 
-  server_id = module.compute.server_id
+  create_floating_ip    = true
+  home_location         = "fsn1"
+  floating_ip_server_id = module.compute.server_id
 }
 
 output "floating_ip_address" {
-  value = module.floating_ip.ip_address
+  description = "Floating IP address"
+  value       = module.ip.floating_ip_address
 }

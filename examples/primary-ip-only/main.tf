@@ -14,21 +14,23 @@ locals {
 # IP Module - Primary IP Only
 ################################################################################
 
-module "primary_ip" {
-  source = "../../modules/primary-ip"
+module "ip" {
+  source = "../../"
 
-  name       = local.name
-  type       = "ipv4"
-  datacenter = "fsn1-dc14"
-  labels     = local.tags
+  name   = local.name
+  labels = local.tags
 
-  auto_delete = false
+  create_primary_ip = true
+  datacenter        = "fsn1-dc14"
+  auto_delete       = false
 }
 
 output "primary_ip_id" {
-  value = module.primary_ip.id
+  description = "ID of the primary IP"
+  value       = module.ip.primary_ip_id
 }
 
 output "primary_ip_address" {
-  value = module.primary_ip.ip_address
+  description = "Primary IP address"
+  value       = module.ip.primary_ip_address
 }
