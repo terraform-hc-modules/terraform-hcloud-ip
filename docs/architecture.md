@@ -25,4 +25,3 @@ flowchart TB
   rdns --> rdns_pip[hcloud_rdns (primary_ip)]
   rdns --> rdns_lb[hcloud_rdns (load_balancer)]
 ```
-

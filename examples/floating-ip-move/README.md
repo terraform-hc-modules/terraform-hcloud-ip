@@ -11,4 +11,3 @@ Hetzner Floating IPs can be (re)assigned between servers. This module supports a
 
 - Moving a Floating IP is an operational action; apply will update the assignment.
 - In production, consider doing moves during a maintenance window and ensure your application is tolerant of IP cutover.
-

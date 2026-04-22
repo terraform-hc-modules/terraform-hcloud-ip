@@ -21,4 +21,3 @@ run "rdns_multiple_ids_fails" {
     terraform_data.validate,
   ]
 }
-

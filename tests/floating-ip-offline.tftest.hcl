@@ -26,4 +26,3 @@ run "floating_ip_plan_offline" {
     error_message = "expected no floating IP to be created"
   }
 }
-
