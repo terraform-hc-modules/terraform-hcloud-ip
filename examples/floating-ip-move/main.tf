@@ -32,4 +32,3 @@ output "floating_ip_id" {
   description = "Floating IP ID"
   value       = module.ip.floating_ip_id
 }
-

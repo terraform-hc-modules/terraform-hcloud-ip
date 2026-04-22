@@ -25,4 +25,3 @@ run "primary_ip_plan_offline" {
     error_message = "expected no primary IP to be created"
   }
 }
-
