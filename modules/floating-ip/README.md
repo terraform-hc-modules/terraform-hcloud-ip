@@ -44,12 +44,12 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_name"></a> [name](#input\_name) | Name of the floating IP. | `string` | n/a | yes |
 | <a name="input_create"></a> [create](#input\_create) | Whether to create the floating IP. | `bool` | `true` | no |
 | <a name="input_delete_protection"></a> [delete\_protection](#input\_delete\_protection) | Enable delete protection. | `bool` | `false` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description of the floating IP. | `string` | `null` | no |
 | <a name="input_home_location"></a> [home\_location](#input\_home\_location) | Home location for the IP. | `string` | `"fsn1"` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply. | `map(string)` | `{}` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the floating IP. | `string` | n/a | yes |
 | <a name="input_server_id"></a> [server\_id](#input\_server\_id) | Server ID to assign to. | `number` | `null` | no |
 | <a name="input_type"></a> [type](#input\_type) | Type of the IP (ipv4 or ipv6). | `string` | `"ipv4"` | no |
 

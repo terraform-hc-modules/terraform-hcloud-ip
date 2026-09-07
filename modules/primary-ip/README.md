@@ -43,6 +43,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_name"></a> [name](#input\_name) | Name of the primary IP. | `string` | n/a | yes |
 | <a name="input_assignee_id"></a> [assignee\_id](#input\_assignee\_id) | ID of the assignee. | `number` | `null` | no |
 | <a name="input_assignee_type"></a> [assignee\_type](#input\_assignee\_type) | Type of the assignee (server). | `string` | `"server"` | no |
 | <a name="input_auto_delete"></a> [auto\_delete](#input\_auto\_delete) | Auto delete when assignee is deleted. | `bool` | `false` | no |
@@ -50,7 +51,6 @@ No modules.
 | <a name="input_datacenter"></a> [datacenter](#input\_datacenter) | Datacenter for the IP. | `string` | `null` | no |
 | <a name="input_delete_protection"></a> [delete\_protection](#input\_delete\_protection) | Enable delete protection. | `bool` | `false` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Labels to apply. | `map(string)` | `{}` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the primary IP. | `string` | n/a | yes |
 | <a name="input_type"></a> [type](#input\_type) | Type of the IP (ipv4 or ipv6). | `string` | `"ipv4"` | no |
 
 ## Outputs

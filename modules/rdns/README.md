@@ -48,10 +48,10 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
-| <a name="input_create"></a> [create](#input\_create) | Whether to create the rDNS entry. | `bool` | `true` | no |
 | <a name="input_dns_ptr"></a> [dns\_ptr](#input\_dns\_ptr) | DNS pointer record. | `string` | n/a | yes |
-| <a name="input_floating_ip_id"></a> [floating\_ip\_id](#input\_floating\_ip\_id) | Floating IP ID. | `number` | `null` | no |
 | <a name="input_ip_address"></a> [ip\_address](#input\_ip\_address) | IP address to set rDNS for. | `string` | n/a | yes |
+| <a name="input_create"></a> [create](#input\_create) | Whether to create the rDNS entry. | `bool` | `true` | no |
+| <a name="input_floating_ip_id"></a> [floating\_ip\_id](#input\_floating\_ip\_id) | Floating IP ID. | `number` | `null` | no |
 | <a name="input_load_balancer_id"></a> [load\_balancer\_id](#input\_load\_balancer\_id) | Load Balancer ID. | `number` | `null` | no |
 | <a name="input_primary_ip_id"></a> [primary\_ip\_id](#input\_primary\_ip\_id) | Primary IP ID. | `number` | `null` | no |
 | <a name="input_server_id"></a> [server\_id](#input\_server\_id) | Server ID (mutually exclusive with other IDs). | `number` | `null` | no |
