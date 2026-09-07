@@ -54,7 +54,7 @@ variable "datacenter" {
   default     = null
 
   validation {
-    condition     = !var.create_primary_ip || (var.datacenter != null && length(trimspace(var.datacenter)) > 0)
+    condition     = var.create_primary_ip ? try(length(trimspace(var.datacenter)) > 0, false) : true
     error_message = "When 'create_primary_ip' is true, 'datacenter' must be set (e.g., fsn1-dc14)."
   }
 }
@@ -99,7 +99,7 @@ variable "home_location" {
   default     = "fsn1"
 
   validation {
-    condition     = !var.create_floating_ip || length(trimspace(var.home_location)) > 0
+    condition     = var.create_floating_ip ? try(length(trimspace(var.home_location)) > 0, false) : true
     error_message = "When 'create_floating_ip' is true, 'home_location' must not be empty (e.g., fsn1)."
   }
 }
