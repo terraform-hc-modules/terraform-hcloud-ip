@@ -32,7 +32,7 @@ variable "primary_ip_name" {
   default     = null
 
   validation {
-    condition     = var.primary_ip_name == null || length(trimspace(var.primary_ip_name)) > 0
+    condition     = var.primary_ip_name == null ? true : length(trimspace(var.primary_ip_name)) > 0
     error_message = "If set, 'primary_ip_name' must not be empty."
   }
 }
@@ -54,7 +54,7 @@ variable "datacenter" {
   default     = null
 
   validation {
-    condition     = !var.create_primary_ip || (var.datacenter != null && length(trimspace(var.datacenter)) > 0)
+    condition     = var.create_primary_ip ? try(length(trimspace(var.datacenter)) > 0, false) : true
     error_message = "When 'create_primary_ip' is true, 'datacenter' must be set (e.g., fsn1-dc14)."
   }
 }
@@ -77,7 +77,7 @@ variable "floating_ip_name" {
   default     = null
 
   validation {
-    condition     = var.floating_ip_name == null || length(trimspace(var.floating_ip_name)) > 0
+    condition     = var.floating_ip_name == null ? true : length(trimspace(var.floating_ip_name)) > 0
     error_message = "If set, 'floating_ip_name' must not be empty."
   }
 }
@@ -99,7 +99,7 @@ variable "home_location" {
   default     = "fsn1"
 
   validation {
-    condition     = !var.create_floating_ip || length(trimspace(var.home_location)) > 0
+    condition     = var.create_floating_ip ? try(length(trimspace(var.home_location)) > 0, false) : true
     error_message = "When 'create_floating_ip' is true, 'home_location' must not be empty (e.g., fsn1)."
   }
 }
@@ -110,7 +110,7 @@ variable "floating_ip_server_id" {
   default     = null
 
   validation {
-    condition     = var.floating_ip_server_id == null || var.floating_ip_server_id > 0
+    condition     = var.floating_ip_server_id == null ? true : var.floating_ip_server_id > 0
     error_message = "If set, 'floating_ip_server_id' must be a positive number."
   }
 }

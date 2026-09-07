@@ -33,7 +33,7 @@ module "server_rdns" {
   source = "../../modules/rdns"
 
   server_id  = module.compute.server_id
-  ip_address = module.compute.server_ipv4_address
+  ip_address = module.compute.ipv4_address
   dns_ptr    = "host01.example.com"
 }
 

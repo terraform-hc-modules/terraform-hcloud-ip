@@ -1,0 +1,60 @@
+name: tf-checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  complete-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/complete/'
+      provider: none
+
+  floating-ip-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/floating-ip/'
+      provider: none
+
+  floating-ip-move-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/floating-ip-move/'
+      provider: none
+
+  primary-ip-only-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/primary-ip-only/'
+      provider: none
+
+  primary-ip-with-assignee-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/primary-ip-with-assignee/'
+      provider: none
+
+  rdns-for-floating-ip-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/rdns-for-floating-ip/'
+      provider: none
+
+  rdns-for-server-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/rdns-for-server/'
+      provider: none
+
+  simple-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/simple/'
+      provider: none
+
+  with-server-assignment-example:
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-checks.yml@v2
+    with:
+      working_directory: './examples/with-server-assignment/'
+      provider: none
