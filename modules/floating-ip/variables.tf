@@ -42,7 +42,7 @@ variable "server_id" {
   default     = null
 
   validation {
-    condition     = var.server_id == null || var.server_id > 0
+    condition     = var.server_id == null ? true : var.server_id > 0
     error_message = "If set, 'server_id' must be a positive number."
   }
 }
@@ -65,7 +65,7 @@ variable "description" {
   default     = null
 
   validation {
-    condition     = var.description == null || length(trimspace(var.description)) > 0
+    condition     = var.description == null ? true : length(trimspace(var.description)) > 0
     error_message = "If set, 'description' must not be empty."
   }
 }

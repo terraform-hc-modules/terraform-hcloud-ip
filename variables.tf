@@ -32,7 +32,7 @@ variable "primary_ip_name" {
   default     = null
 
   validation {
-    condition     = var.primary_ip_name == null || length(trimspace(var.primary_ip_name)) > 0
+    condition     = var.primary_ip_name == null ? true : length(trimspace(var.primary_ip_name)) > 0
     error_message = "If set, 'primary_ip_name' must not be empty."
   }
 }
@@ -77,7 +77,7 @@ variable "floating_ip_name" {
   default     = null
 
   validation {
-    condition     = var.floating_ip_name == null || length(trimspace(var.floating_ip_name)) > 0
+    condition     = var.floating_ip_name == null ? true : length(trimspace(var.floating_ip_name)) > 0
     error_message = "If set, 'floating_ip_name' must not be empty."
   }
 }
@@ -110,7 +110,7 @@ variable "floating_ip_server_id" {
   default     = null
 
   validation {
-    condition     = var.floating_ip_server_id == null || var.floating_ip_server_id > 0
+    condition     = var.floating_ip_server_id == null ? true : var.floating_ip_server_id > 0
     error_message = "If set, 'floating_ip_server_id' must be a positive number."
   }
 }

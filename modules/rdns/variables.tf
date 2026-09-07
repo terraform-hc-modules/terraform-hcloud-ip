@@ -10,7 +10,7 @@ variable "server_id" {
   default     = null
 
   validation {
-    condition     = var.server_id == null || var.server_id > 0
+    condition     = var.server_id == null ? true : var.server_id > 0
     error_message = "If set, 'server_id' must be a positive number."
   }
 }
@@ -21,7 +21,7 @@ variable "floating_ip_id" {
   default     = null
 
   validation {
-    condition     = var.floating_ip_id == null || var.floating_ip_id > 0
+    condition     = var.floating_ip_id == null ? true : var.floating_ip_id > 0
     error_message = "If set, 'floating_ip_id' must be a positive number."
   }
 }
@@ -32,7 +32,7 @@ variable "primary_ip_id" {
   default     = null
 
   validation {
-    condition     = var.primary_ip_id == null || var.primary_ip_id > 0
+    condition     = var.primary_ip_id == null ? true : var.primary_ip_id > 0
     error_message = "If set, 'primary_ip_id' must be a positive number."
   }
 }
@@ -43,7 +43,7 @@ variable "load_balancer_id" {
   default     = null
 
   validation {
-    condition     = var.load_balancer_id == null || var.load_balancer_id > 0
+    condition     = var.load_balancer_id == null ? true : var.load_balancer_id > 0
     error_message = "If set, 'load_balancer_id' must be a positive number."
   }
 }

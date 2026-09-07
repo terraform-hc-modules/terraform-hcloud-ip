@@ -42,7 +42,7 @@ variable "assignee_id" {
   default     = null
 
   validation {
-    condition     = var.assignee_id == null || var.assignee_id > 0
+    condition     = var.assignee_id == null ? true : var.assignee_id > 0
     error_message = "If set, 'assignee_id' must be a positive number."
   }
 }
@@ -53,7 +53,7 @@ variable "datacenter" {
   default     = null
 
   validation {
-    condition     = var.datacenter == null || length(trimspace(var.datacenter)) > 0
+    condition     = var.datacenter == null ? true : length(trimspace(var.datacenter)) > 0
     error_message = "If set, 'datacenter' must not be empty."
   }
 }
