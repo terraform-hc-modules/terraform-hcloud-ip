@@ -28,7 +28,7 @@ output "assignee_id" {
   value       = try(hcloud_primary_ip.this[0].assignee_id, null)
 }
 
-output "datacenter" {
-  description = "Datacenter name."
-  value       = try(hcloud_primary_ip.this[0].datacenter, null)
+output "location" {
+  description = "Location name."
+  value       = try(hcloud_primary_ip.this[0].location, null)
 }

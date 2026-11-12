@@ -21,7 +21,7 @@ module "ip" {
   labels = local.tags
 
   create_primary_ip = true
-  datacenter        = "fsn1-dc14"
+  location          = "fsn1"
   auto_delete       = false
 }
 

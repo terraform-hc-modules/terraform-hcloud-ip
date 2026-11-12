@@ -14,10 +14,10 @@ run "primary_ip_plan_offline" {
   }
 
   variables {
-    create     = false
-    name       = "test-primary"
-    type       = "ipv4"
-    datacenter = "fsn1-dc14"
+    create   = false
+    name     = "test-primary"
+    type     = "ipv4"
+    location = "fsn1"
   }
 
   assert {

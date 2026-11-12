@@ -5,7 +5,7 @@ resource "hcloud_primary_ip" "this" {
   type              = var.type
   assignee_type     = var.assignee_type
   assignee_id       = var.assignee_id
-  datacenter        = var.datacenter
+  location          = var.location
   auto_delete       = var.auto_delete
   delete_protection = var.delete_protection
   labels            = var.labels
