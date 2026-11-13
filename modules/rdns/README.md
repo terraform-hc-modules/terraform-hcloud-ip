@@ -21,13 +21,13 @@ module "rdns" {
 | Name | Version |
 | ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | >= 1.45 |
+| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | >= 1.58 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | >= 1.45 |
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | >= 1.58 |
 | <a name="provider_terraform"></a> [terraform](#provider\_terraform) | n/a |
 
 ## Modules

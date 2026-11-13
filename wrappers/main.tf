@@ -7,6 +7,7 @@ module "wrapper" {
 
   create_primary_ip = try(each.value.create_primary_ip, false)
   primary_ip_type   = try(each.value.primary_ip_type, "ipv4")
+  location          = try(each.value.location, null)
 
   create_floating_ip    = try(each.value.create_floating_ip, false)
   floating_ip_type      = try(each.value.floating_ip_type, "ipv4")

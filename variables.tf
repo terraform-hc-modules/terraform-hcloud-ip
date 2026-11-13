@@ -48,14 +48,14 @@ variable "primary_ip_type" {
   }
 }
 
-variable "datacenter" {
-  description = "Datacenter for primary IP."
+variable "location" {
+  description = "Location for primary IP (e.g., fsn1, nbg1, hel1)."
   type        = string
   default     = null
 
   validation {
-    condition     = var.create_primary_ip ? try(length(trimspace(var.datacenter)) > 0, false) : true
-    error_message = "When 'create_primary_ip' is true, 'datacenter' must be set (e.g., fsn1-dc14)."
+    condition     = var.create_primary_ip ? try(length(trimspace(var.location)) > 0, false) : true
+    error_message = "When 'create_primary_ip' is true, 'location' must be set (e.g., fsn1)."
   }
 }
 

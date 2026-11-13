@@ -47,14 +47,14 @@ variable "assignee_id" {
   }
 }
 
-variable "datacenter" {
-  description = "Datacenter for the IP."
+variable "location" {
+  description = "Location for the IP (e.g., fsn1, nbg1, hel1)."
   type        = string
   default     = null
 
   validation {
-    condition     = var.datacenter == null ? true : length(trimspace(var.datacenter)) > 0
-    error_message = "If set, 'datacenter' must not be empty."
+    condition     = var.location == null ? true : length(trimspace(var.location)) > 0
+    error_message = "If set, 'location' must not be empty."
   }
 }
 

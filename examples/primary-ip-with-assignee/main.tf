@@ -34,7 +34,7 @@ module "primary_ip" {
 
   name        = "${local.name}-primary"
   type        = "ipv4"
-  datacenter  = "fsn1-dc14"
+  location    = "fsn1"
   assignee_id = module.compute.server_id
   labels      = local.tags
 }

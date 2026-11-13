@@ -27,7 +27,7 @@ output "primary_ip" {
     type          = module.primary_ip.type
     assignee_type = module.primary_ip.assignee_type
     assignee_id   = module.primary_ip.assignee_id
-    datacenter    = module.primary_ip.datacenter
+    location      = module.primary_ip.location
   }
 }
 
