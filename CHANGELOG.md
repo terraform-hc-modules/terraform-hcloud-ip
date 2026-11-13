@@ -1,3 +1,15 @@
+## [0.5.0](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.4.1...v0.5.0) (2026-11-13)
+
+### Breaking changes
+
+* `datacenter` is replaced by `location` on the root module, `modules/primary-ip`, the wrapper, examples and outputs. Hetzner removed `datacenter` from the Primary IPs API on 2026-07-01 and hcloud provider v1.67.0 removed the argument. Use a location such as `fsn1`, `nbg1`, `hel1`, `ash`, `hil` or `sin` ([#9](https://github.com/terraform-hc-modules/terraform-hcloud-ip/pull/9), closes [#8](https://github.com/terraform-hc-modules/terraform-hcloud-ip/issues/8))
+* hcloud provider floor raised to `>= 1.58`
+
+### Bug Fixes
+
+* the root module requires `location` when `create_primary_ip = true`
+* the wrapper passes `location`, so it can create Primary IPs again
+
 # [0.3.0](https://github.com/terraform-hc-modules/terraform-hcloud-ip/compare/v0.2.1...v0.3.0) (2026-04-20)
 
 
